@@ -15,17 +15,17 @@ chapter: false
 
 &emsp; **Email:** quoclam1404@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS042026
+&emsp; **Class:** 22DTHB1
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Internship Position:** Cloud Engineer
 
-&emsp; **Internship Duration:** From 17/04/2026 to 26/06/2026
+&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
 
 ![Your profile picture](/images/avatar.jpg)
 
