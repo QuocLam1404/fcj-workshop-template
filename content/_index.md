@@ -29,6 +29,11 @@ chapter: false
 
 ![Your profile picture](/images/avatar.jpg)
 
+{{% notice info %}}
+* **Deployed Website:** [lingorise.xyz](https://www.lingorise.xyz/)
+* **Project Demo Video:** [Google Drive Demo Folder](https://drive.google.com/drive/u/0/folders/1p3dhFRWf3rbgyNnlVk-R2KkELfWrA1Ce)
+{{% /notice %}}
+
 ### Report Content
 
 1.  [Worklog](1-Worklog/)

@@ -30,6 +30,11 @@ chapter: false
 
 ![Ảnh đại diện của bạn](/images/avatar.jpg)
 
+{{% notice info %}}
+* **Trang web đã triển khai:** [lingorise.xyz](https://www.lingorise.xyz/)
+* **Video Demo dự án:** [Thư mục Google Drive Demo](https://drive.google.com/drive/u/0/folders/1p3dhFRWf3rbgyNnlVk-R2KkELfWrA1Ce)
+{{% /notice %}}
+
 ### Nội dung báo cáo
 
 1.  [Worklog](1-Worklog/)
