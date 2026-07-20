@@ -1,5 +1,5 @@
 ---
-title: "Week 2 Worklog"
+title: "S3, RDS, DynamoDB & IAM"
 date: 2026-04-27
 weight: 2
 chapter: false

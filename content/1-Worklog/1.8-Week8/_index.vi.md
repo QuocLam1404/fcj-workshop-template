@@ -1,5 +1,5 @@
 ---
-title: "Tuần 8 Worklog"
+title: "Tích hợp, bảo mật & triển khai Beta"
 date: 2026-06-08
 weight: 8
 chapter: false

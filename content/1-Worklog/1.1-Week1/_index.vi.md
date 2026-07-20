@@ -1,5 +1,5 @@
 ---
-title: "Tuần 1 Worklog"
+title: "Nền tảng AWS — EC2, VPC, DRS & SAM"
 date: 2026-04-20
 weight: 1
 chapter: false

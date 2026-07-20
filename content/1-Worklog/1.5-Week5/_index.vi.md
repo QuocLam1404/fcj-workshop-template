@@ -1,5 +1,5 @@
 ---
-title: "Tuần 5 Worklog"
+title: "Khởi động dự án — Proposal, kiến trúc hệ thống & thiết lập repository"
 date: 2026-05-18
 weight: 5
 chapter: false

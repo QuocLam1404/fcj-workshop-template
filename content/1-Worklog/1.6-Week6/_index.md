@@ -1,5 +1,5 @@
 ---
-title: "Week 6 Worklog"
+title: "Core Feature Development — Auth, APIs & Database Integration"
 date: 2026-05-25
 weight: 6
 chapter: false

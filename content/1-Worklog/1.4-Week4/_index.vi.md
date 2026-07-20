@@ -1,5 +1,5 @@
 ---
-title: "Tuần 4 Worklog"
+title: "DevOps — CI/CD, CloudWatch & tối ưu chi phí"
 date: 2026-05-11
 weight: 4
 chapter: false

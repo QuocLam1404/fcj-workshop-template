@@ -1,5 +1,5 @@
 ---
-title: "Tuần 10 Worklog"
+title: "Bàn giao, báo cáo tổng kết & thuyết trình"
 date: 2026-06-22
 weight: 10
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Tuần 6 Worklog"
+title: "Phát triển tính năng cốt lõi — Xác thực, APIs & tích hợp database"
 date: 2026-05-25
 weight: 6
 chapter: false

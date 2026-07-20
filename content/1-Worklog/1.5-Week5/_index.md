@@ -1,5 +1,5 @@
 ---
-title: "Week 5 Worklog"
+title: "Project Kick-off — Proposal, Architecture & Repository Setup"
 date: 2026-05-18
 weight: 5
 chapter: false

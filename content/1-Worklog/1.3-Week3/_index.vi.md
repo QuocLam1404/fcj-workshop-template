@@ -1,5 +1,5 @@
 ---
-title: "Tuần 3 Worklog"
+title: "Kiến trúc Serverless — Lambda, API Gateway & dịch vụ AI"
 date: 2026-05-04
 weight: 3
 chapter: false

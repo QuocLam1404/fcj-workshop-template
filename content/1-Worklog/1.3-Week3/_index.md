@@ -1,5 +1,5 @@
 ---
-title: "Week 3 Worklog"
+title: "Serverless Architecture — Lambda, API Gateway & AI Services"
 date: 2026-05-04
 weight: 3
 chapter: false

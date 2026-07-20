@@ -1,5 +1,5 @@
 ---
-title: "Week 9 Worklog"
+title: "Testing & AI Optimization"
 date: 2026-06-15
 weight: 9
 chapter: false

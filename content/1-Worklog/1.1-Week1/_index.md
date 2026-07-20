@@ -1,5 +1,5 @@
 ---
-title: "Week 1 Worklog"
+title: "AWS Foundations — EC2, VPC, DRS & SAM"
 date: 2026-04-20
 weight: 1
 chapter: false

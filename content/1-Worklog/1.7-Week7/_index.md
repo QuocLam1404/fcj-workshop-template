@@ -1,5 +1,5 @@
 ---
-title: "Week 7 Worklog"
+title: "Full-stack Development — Backend Services, Frontend UI & Database"
 date: 2026-06-01
 weight: 7
 chapter: false
