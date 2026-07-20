@@ -40,7 +40,6 @@ pre: " <b> 7. </b> "
 | Công cụ | Lý do |
 |---------|-------|
 | **AWS SAM CLI** | Công cụ tuyệt vời để tiếp cận Infrastructure as Code (IaC) ở mức độ cơ bản, giúp deploy lặp lại dễ dàng. |
-| **Trợ lý lập trình AI (Gemini/Antigravity)** | Hoạt động như một "Senior Cloud Engineer ảo" luôn túc trực, giúp giải thích chi tiết các mã lỗi deploy CloudFormation khó hiểu, hướng dẫn cách viết phân quyền IAM tối thiểu (Least Privilege) và sửa lỗi định tuyến mạng VPC. |
 | **CloudWatch Logs** | Công cụ bắt buộc phải làm quen để biết hệ thống đám mây đang chạy ra sao và tìm lỗi ở đâu. |
 
 

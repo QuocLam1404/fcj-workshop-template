@@ -30,7 +30,7 @@ pre: " <b> 7. </b> "
 - **Document error logs from Day 1:** Errors are a Cloud Engineer's greatest teacher. Write down your deployment errors and how you resolved them in your worklog.
 
 **Week 5–9 (Project Phase):**
-- **Leverage your AI assistant:** When you hit complicated SAM YAML deploy errors or overlapping IAM permission blocks, don't guess in the dark. Ask your AI assistant (Gemini/Antigravity) to explain the error logs; you'll learn the underlying concept much faster.
+- **Leverage official documentation (AWS Docs) and StackOverflow:** When you hit complicated SAM YAML deploy errors or overlapping IAM permission blocks, don't guess in the dark. Search error codes in official AWS documentation or developer communities to understand the underlying mechanics and find solutions.
 - **Deploy the core first:** Don't try to build a massive system on day one. Focus on getting a basic API Gateway-to-Lambda-to-RDS flow working first, then layer on security controls like WAF, Cognito, and CloudFront.
 
 **Week 10–12 (Reporting Phase):**
@@ -40,7 +40,6 @@ pre: " <b> 7. </b> "
 | Tool | Why |
 |------|-----|
 | **AWS SAM CLI** | A fantastic entryway into Infrastructure as Code (IaC), making deployments repeatable and structured. |
-| **AI Coding Assistant (Gemini/Antigravity)** | Acts as a 24/7 **"Virtual Senior Cloud Engineer"**, explaining confusing CloudFormation deployment stack errors, helping write secure, least-privilege IAM policies, and debugging VPC networking. |
 | **CloudWatch Logs** | A must-use tool for monitoring your serverless resources and hunting down runtime errors. |
 
 
