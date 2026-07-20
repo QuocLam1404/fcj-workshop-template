@@ -7,9 +7,9 @@ pre: " <b> 3.3. </b> "
 ---
 
 
-# TỰ ĐỘNG HÓA THANH TOÁN VỚI PAYOS WEBHOOK & AWS LAMBDA
+# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
 
-Bài viết này chi tiết giải pháp tích hợp thanh toán tự động qua mã QR động PayOS kết hợp xử lý webhook bất đồng bộ trên AWS Lambda.
+Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
 
 Các điểm chính cần nắm:
 
