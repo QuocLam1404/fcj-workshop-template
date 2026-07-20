@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# AUTOMATING PAYMENTS WITH PAYOS WEBHOOKS & AWS LAMBDA
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+This blog details the step-by-step implementation of automated payment verification using PayOS dynamic QR codes and asynchronous webhook handling on AWS Lambda.
 
 Key points to know:
 

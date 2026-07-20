@@ -7,9 +7,9 @@ pre: " <b> 3.2. </b> "
 ---
 
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# SERVERLESS ARCHITECTURE WITH AWS LAMBDA & SUPABASE
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+This blog post explores building a scalable, serverless-first architecture using AWS Lambda, Amazon API Gateway, and Supabase PostgreSQL for high-traffic cloud applications.
 
 Key points to know:
 
