@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+title: "Tuần 2 Worklog"
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 2 WORKLOG
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Áp dụng quản lý định danh nâng cao và truy cập tài nguyên an toàn bằng IAM Roles.
+* Thiết lập giải pháp lưu trữ dữ liệu an toàn, chống ghi đè trên Amazon S3 với Bucket Policy và Object Versioning.
+* Nghiên cứu, cấu hình và triển khai các hệ quản trị cơ sở dữ liệu quan hệ (RDS PostgreSQL) và phi quan hệ (DynamoDB).
+* Kết nối an toàn giữa các máy chủ tính toán (EC2) và cơ sở dữ liệu (RDS) thông qua các lớp bảo mật VPC.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 2 | - Thiết lập thuộc tính Amazon S3: Kích hoạt Versioning bảo vệ đối tượng, bật mã hóa mặc định <br> - Viết custom Bucket Policy để chỉ cho phép các IP đáng tin cậy truy xuất dữ liệu | 27/04/2026 | 27/04/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/> |
+| 4 | - Nghiên cứu sâu về phân quyền IAM: Tạo các JSON policy tùy biến <br> - Tạo IAM Role chuyên biệt gắn vào EC2 Instance Profile giúp EC2 tự xác thực với S3 mà không cần lưu trữ key tĩnh | 29/04/2026 | 29/04/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/> |
+| 5 | - Cấu hình Security Group cho cơ sở dữ liệu để chỉ cho phép nhận kết nối từ Security Group của EC2 <br> - Viết code kết nối thử nghiệm từ máy ảo EC2 đến cơ sở dữ liệu RDS | 30/04/2026 | 30/04/2026 | <https://docs.aws.amazon.com/vpc/> |
 
-### Kết quả đạt được tuần 2:
+### Tuần 2 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Bảo mật dữ liệu nâng cao**: Quản lý S3 hiệu quả bằng cách áp dụng mã hóa, ngăn ngừa xóa nhầm nhờ Versioning và phân quyền chặt chẽ với Bucket Policy.
+* **Làm chủ Database đa dạng**: Có kinh nghiệm thực tế triển khai và vận hành cả RDS (SQL) lẫn DynamoDB (NoSQL), nắm rõ ưu/nhược điểm từng loại.
+* **Bảo mật cấp độ ứng dụng**: Loại bỏ hoàn toàn rủi ro lộ mã bảo mật nhờ ứng dụng IAM Role thay thế cho Access Key tĩnh trên EC2.
+* **Thiết lập mạng nội bộ an toàn**: Cách ly thành công cơ sở dữ liệu trong mạng riêng tư, kiểm soát lưu lượng truy cập bằng quy tắc Security Group chéo.
+* **Tích hợp hệ thống thành công**: Hoàn thành kiểm thử liên kết ứng dụng EC2 - RDS - S3 hoạt động ổn định và an toàn.

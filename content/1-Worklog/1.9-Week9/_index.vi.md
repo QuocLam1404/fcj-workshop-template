@@ -1,59 +1,34 @@
 ---
-title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+title: "Tuần 9 Worklog"
+date: 2026-06-15
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 9 WORKLOG
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai toàn bộ nền tảng LingoRise lên môi trường production AWS bằng SAM và Amplify.
+* Cấu hình biến môi trường production, quản lý secrets, và chạy database migration trên Amazon RDS.
+* Thiết lập CloudFront CDN distribution cho tài nguyên tĩnh frontend và phân phối media từ S3.
+* Chạy smoke test trên production để xác nhận toàn bộ luồng người dùng hoạt động trên hạ tầng thực.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 2 | - Chuẩn bị file SAM `template.yaml` cho production: cấu hình memory, timeout, và environment variables cho các Lambda function <br> - Chạy `sam build && sam deploy --guided` để provision toàn bộ Lambda functions và API Gateway endpoints | 15/06/2026 | 15/06/2026 | <https://docs.aws.amazon.com/serverless-application-model/> |
+| 3 | - Triển khai frontend Next.js lên AWS Amplify Hosting với cấu hình tên miền tùy chỉnh <br> - Debug và sửa lỗi không khớp biến môi trường giữa local development và Amplify build settings (API base URL, Cognito pool IDs) | 16/06/2026 | 16/06/2026 | <https://docs.aws.amazon.com/amplify/> |
+| 5 | - Tạo CloudFront distribution cho S3 bucket phục vụ hình ảnh đề thi và tài nguyên audio <br> - Cấu hình Origin Access Control (OAC) để giữ S3 bucket private trong khi phân phối nội dung qua CloudFront <br> - Thiết lập cache behaviors và chính sách TTL cho các loại tài nguyên khác nhau | 18/06/2026 | 18/06/2026 | <https://docs.aws.amazon.com/cloudfront/> |
+| 6 | - Chạy smoke test production: đăng ký tài khoản mới → tạo phiên thi → nộp đáp án → xem kết quả <br> - Sửa lỗi cấu hình CORS trên API Gateway chặn request từ domain Amplify frontend <br> - Xác minh luồng xác thực Cognito hoạt động chính xác trên production | 19/06/2026 | 19/06/2026 | <https://docs.aws.amazon.com/apigateway/> |
 
-### Kết quả đạt được tuần 9:
+### Tuần 9 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Backend Production Hoạt Động**: Triển khai thành công toàn bộ Lambda functions và API Gateway routes qua SAM, với environment variables được cấu hình chính xác.
+* **Frontend Hosting**: Triển khai frontend Next.js trên AWS Amplify với CI/CD tự động build khi push Git.
+* **Database Sẵn Sàng Production**: Migration toàn bộ schema lên production RDS, xác minh tính toàn vẹn dữ liệu và seed dữ liệu tham chiếu thiết yếu.
+* **Phân Phối CDN**: Cấu hình CloudFront với OAC để phân phối an toàn hình ảnh đề thi và file audio từ S3 bucket private.
+* **Sửa Lỗi CORS**: Khắc phục lỗi CORS chỉ xuất hiện trên production khi API Gateway từ chối request từ domain Amplify frontend.
+* **Xác Nhận End-to-End**: Xác nhận toàn bộ luồng học viên (đăng ký → thi → chấm điểm → xem lại) hoạt động trên hạ tầng AWS thực.

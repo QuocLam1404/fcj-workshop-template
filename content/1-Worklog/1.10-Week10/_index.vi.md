@@ -1,59 +1,34 @@
 ---
-title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+title: "Tuần 10 Worklog"
+date: 2026-06-22
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 10 WORKLOG
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Sửa các lỗi production phát hiện trong quá trình smoke test Tuần 9: edge case trong chấm điểm thi, lỗi upload file, và sai lệch hiển thị giao diện.
+* Tăng cường bảo mật nền tảng: triển khai input validation trên tất cả API endpoints, thêm rate limiting middleware, và đảm bảo sử dụng parameterized SQL queries.
+* Tối ưu hiệu năng: giảm thời gian cold start Lambda, nén media assets trên S3, và tinh chỉnh execution plan truy vấn database.
+* Dọn dẹp code cuối cùng và đảm bảo tất cả lệnh build/lint/test đều pass.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 3 | - Triển khai Joi input validation schemas trên tất cả API Gateway endpoints <br> - Thêm express-rate-limit middleware ngăn chặn tấn công brute-force trên các endpoint xác thực <br> - Kiểm tra toàn bộ SQL queries để xác nhận đều sử dụng parameterized execution | 23/06/2026 | 23/06/2026 | <https://express-validator.github.io/docs/> |
+| 4 | - Tối ưu cold start Lambda: giảm kích thước package bundle bằng tree-shaking các dependency không sử dụng <br> - Cấu hình provisioned concurrency cho Lambda handler nộp bài thi để đảm bảo thời gian phản hồi ổn định | 24/06/2026 | 24/06/2026 | <https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html> |
+| 6 | - Dọn dẹp code cuối cùng: xóa console.log, unused imports, và dead code branches <br> - Chạy bộ xác minh đầy đủ: `npm run build`, `npm run typecheck`, `npm run lint`, `npm test` — tất cả đều pass green | 26/06/2026 | 26/06/2026 | <https://eslint.org/docs/> |
 
-### Kết quả đạt được tuần 10:
+### Tuần 10 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Sửa Lỗi Chấm Điểm**: Sửa logic partial scoring cho câu hỏi Reading nhiều đáp án đã bị đếm thiếu số câu trả lời đúng.
+* **Xử Lý Lỗi Upload**: Thêm error boundaries và thông báo người dùng cho file upload vượt quá giới hạn 5MB của S3.
+* **Tăng Cường Bảo Mật**: Triển khai input validation, rate limiting, và xác nhận parameterized queries trên tất cả API endpoints.
+* **Tối Ưu Cold Start**: Giảm thời gian cold start Lambda khoảng 40% thông qua tree-shaking dependency và provisioned concurrency trên các handler quan trọng.
+* **Tối Ưu Tài Nguyên**: Nén toàn bộ ảnh đề thi qua Sharp, giảm kích thước ảnh trung bình 60% và cải thiện thời gian tải trang.
+* **Hiệu Năng Database**: Thêm indexes chiến lược, giảm thời gian truy vấn trung bình cho tra cứu exam session từ ~200ms xuống ~15ms.
+* **Codebase Sạch**: Tất cả lệnh build, lint, typecheck, và test đều pass green với zero warnings.

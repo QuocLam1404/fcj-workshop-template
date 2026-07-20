@@ -1,57 +1,32 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# WEEK 7 WORKLOG
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Optimize the AI-assisted exam generation performance, fixing issues causing fluctuating generation speeds and timeouts.
+* Implement an asynchronous queue-based architecture for AI generation calls.
+* Refactor the admin dashboard landing page to show newly generated exams and streamline the post-creation review and moderation logic.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks carried out this week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Tue | - Re-engineer the AI generator loop into an asynchronous background worker using BullMQ <br> - Enable instant client responses with a job ID for tracking generation progress | 02/06/2026 | 02/06/2026 | <https://nodejs.org/api/> |
+| Wed | - Optimize prompt structures and token counts, testing response speeds <br> - Establish a caching layer for static exam templates to ensure consistent generation time | 03/06/2026 | 03/06/2026 | <https://redis.io/documentation> |
+| Thu | - Redesign the admin dashboard home page layout to display newly generated exams in a "Pending Review" queue immediately after creation | 04/06/2026 | 04/06/2026 | <https://nextjs.org/docs/> |
+| Fri | - Implement instant action buttons (Approve/Reject) on the dashboard home page to bypass deep menus <br> - Test the modified moderation workflow and run integration tests | 05/06/2026 | 05/06/2026 | <https://playwright.dev/> |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Optimized AI Generation Speed**: Fixed the fluctuating response speed issue by shifting to an async background job architecture with prompt context optimizations.
+* **Dashboard Review Pipeline**: Redesigned the admin dashboard home page to list recently created exams for immediate action.
+* **Direct Moderation Logic**: Built a direct approval/rejection logic on the home page, reducing steps to publish new exams from 5 screens to 1 click.
+* **Decoupled Job Queue**: Implemented background queues to prevent request timeouts, ensuring system reliability during heavy AI loads.
+* **Robust Database Integration**: Connected the dashboard moderation actions to PostgreSQL with transaction-wrapped state mutations.

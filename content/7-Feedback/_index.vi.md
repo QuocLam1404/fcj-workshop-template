@@ -1,44 +1,46 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2024-01-01
+date: 2026-07-07
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Chia sẻ và đóng góp ý kiến
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+## Phản hồi về chương trình thực tập FCAJ
 
-### Đánh giá chung
+### Những điều tôi thích (Dưới góc nhìn một người mới)
+1. **Lộ trình học từ cơ bản đến nâng cao:** Giai đoạn nền tảng AWS 4 tuần đầu là bước chuẩn bị vô giá cho một newbie như tôi. Việc đi từ các dịch vụ đơn lẻ (EC2, S3, Lambda) đến cách phối hợp chúng giúp tôi không bị ngợp trước hệ sinh thái khổng lồ của AWS.
+2. **Học thông qua dự án thực tế:** Triển khai **LingoRise** trên hạ tầng đám mây thực tế giúp tôi thấu hiểu những bài toán thực chiến mà một Cloud Engineer phải giải quyết như: bảo mật dữ liệu, phân quyền truy cập, thiết lập CDN và tối ưu hóa cơ sở dữ liệu.
+3. **Môi trường rèn luyện tiếng Anh chuyên nghiệp:** Yêu cầu viết mọi tài liệu bằng tiếng Anh ban đầu là một thử thách lớn, nhưng đã giúp tôi làm quen với ngôn ngữ kỹ thuật quốc tế và tự tin hơn rất nhiều khi đọc tài liệu gốc của AWS.
+4. **Sự hỗ trợ nhiệt tình từ Mentor:** Mentor luôn kiên nhẫn định hướng kiến trúc đám mây và chỉ dẫn các phương pháp deploy an toàn cho một người mới vào ngành.
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+### Đề xuất cải thiện
+1. **Bổ sung các buổi sửa lỗi (Troubleshooting Workshops):** Đối với người mới bắt đầu, việc xử lý các lỗi như cấu hình VPC, lỗi định tuyến IP của NAT Gateway, hay lỗi CORS là cực kỳ khó khăn. Chương trình nên bổ sung các bài học tình huống thực tế để thực hành debug các lỗi kinh điển này.
+2. **Các phiên Code Review hạ tầng:** Hướng dẫn cách tối ưu hóa các tệp cấu hình AWS SAM/Terraform chuẩn doanh nghiệp để tránh nợ kỹ thuật (technical debt) từ đầu.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+---
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+## Chia sẻ với các bạn thực tập sinh tương lai
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+### Bí quyết cho người mới bắt đầu (Newbies)
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**Tuần 1–4 (Giai đoạn nền tảng):**
+- **Đừng chỉ đọc, hãy gõ lệnh:** Đừng chỉ click chuột trên Console. Hãy tập sử dụng AWS CLI để quen tay. Những dòng lệnh gõ trực tiếp sẽ giúp bạn nhớ bài lâu hơn.
+- **Ghi chép log lỗi từ ngày đầu:** Đối với một Cloud Engineer tương lai, lỗi chính là bài học lớn nhất. Hãy ghi lại các lỗi deploy bạn gặp và cách bạn đã vượt qua nó vào worklog.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+**Tuần 5–9 (Giai đoạn dự án):**
+- **Tận dụng tài liệu chính thức (AWS Docs) và StackOverflow:** Khi gặp các lỗi deploy YAML phức tạp của SAM hoặc cấu hình IAM Policies chồng chéo, đừng đoán mò. Hãy chủ động tra cứu mã lỗi trên tài liệu AWS hoặc tham khảo các cộng đồng công nghệ để hiểu rõ cơ chế và tìm ra giải pháp.
+- **Tập trung vào phần cốt lõi trước:** Đừng cố xây dựng một hệ thống quá đồ sộ ngay từ đầu. Hãy deploy thành công một pipeline API-to-Lambda-to-RDS cơ bản trước, sau đó mới bổ sung WAF, CloudFront hay Cognito.
+
+**Tuần 10–12 (Giai đoạn báo cáo):**
+- **Đầu tư cho Portfolio:** Trang báo cáo thực tập này chính là hồ sơ năng lực (portfolio) trực quan nhất của bạn. Hãy trình bày nó thật rõ ràng và chuyên nghiệp để chứng minh sự trưởng thành của bạn sau khóa học.
+
+### Công cụ đắc lực nhất cho một Newbie Cloud Engineer
+| Công cụ | Lý do |
+|---------|-------|
+| **AWS SAM CLI** | Công cụ tuyệt vời để tiếp cận Infrastructure as Code (IaC) ở mức độ cơ bản, giúp deploy lặp lại dễ dàng. |
+| **Trợ lý lập trình AI (Gemini/Antigravity)** | Hoạt động như một "Senior Cloud Engineer ảo" luôn túc trực, giúp giải thích chi tiết các mã lỗi deploy CloudFormation khó hiểu, hướng dẫn cách viết phân quyền IAM tối thiểu (Least Privilege) và sửa lỗi định tuyến mạng VPC. |
+| **CloudWatch Logs** | Công cụ bắt buộc phải làm quen để biết hệ thống đám mây đang chạy ra sao và tìm lỗi ở đâu. |
 
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
-
-
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):

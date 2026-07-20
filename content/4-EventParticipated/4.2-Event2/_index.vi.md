@@ -1,125 +1,132 @@
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "Sự kiện 2: AWS First Cloud AI Journey — Hội thảo chia sẻ nghề nghiệp & văn hóa tại MNCs"
+date: 2026-06-13
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# AWS First Cloud AI Journey — Hội thảo chia sẻ nghề nghiệp & văn hóa tại MNCs
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Thông tin sự kiện
+| | |
+|---|---|
+| **Tên sự kiện** | AWS First Cloud AI Journey — Hội thảo chia sẻ nghề nghiệp & văn hóa tại MNCs |
+| **Ngày** | 13/06/2026 |
+| **Địa điểm** | Tầng 26, Tòa nhà Bitexco Financial Tower, Số 2 đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh |
+| **Đơn vị tổ chức** | AWS Study Group |
+| **Vai trò** | Thực tập sinh / Người tham gia |
 
-### Mục Đích Của Sự Kiện
+### Mô tả sự kiện
+**Hội thảo chia sẻ nghề nghiệp & văn hóa tại MNCs** là sự kiện định hướng và cố vấn nghề nghiệp được tổ chức bởi AWS Study Group tại Bitexco Financial Tower. Hội thảo hướng tới việc thu hẹp khoảng cách giữa lý thuyết học tập và môi trường doanh nghiệp thực tế thông qua các chia sẻ trải nghiệm thực chiến về lộ trình nghề nghiệp, văn hóa làm việc và bộ kỹ năng cốt lõi tại các tập đoàn đa quốc gia (MNCs) cũng như các công ty khởi nghiệp tăng trưởng nhanh.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Chủ đề 1: "Câu chuyện thực tế đến văn hóa tại tập đoàn đa quốc gia"
+Trình bày bởi **Mr. Dat Pham** (Data Analytics Engineer) và **Mr. Cuong Nguyen** (Process Engineer), chuyên đề tập trung chia sẻ về nhiệm vụ công việc thực tế của kỹ sư dữ liệu, tư duy phát triển sự nghiệp và các kỹ năng cứng/mềm cần thiết trong doanh nghiệp.
 
-### Danh Sách Diễn Giả
+#### 1. Thực tế công việc trong doanh nghiệp:
+Công việc của Data Analytics Engineer có sự khác biệt rất lớn tùy thuộc vào domain (ngành nghề), mô hình kinh doanh và phòng ban hỗ trợ:
+*   **Kamereo (Startup tăng trưởng nhanh)**:
+    *   Xây dựng báo cáo theo ngày, tuần, tháng, quý để theo dõi sát sao hiệu suất vận hành của hệ thống.
+    *   Thiết kế các Dashboard quản lý xu hướng dữ liệu, phát hiện các điểm bất thường và hỗ trợ đưa ra quyết định kịp thời.
+    *   Phân tích các chỉ số kinh doanh/vận hành, tìm nguyên nhân gốc rễ (root cause) và đề xuất giải pháp xử lý.
+    *   Phối hợp chặt chẽ đa phòng ban để giải quyết trực tiếp các bài toán phát sinh hàng ngày.
+*   **Colgate-Palmolive (Tập đoàn sản xuất đa quốc gia)**:
+    *   Tham gia vào các dự án thu thập dữ liệu máy móc, tối ưu vận hành và thiết kế các thiết bị IoT trong nhà máy.
+    *   Tìm kiếm và khai phá các cơ hội tối ưu hóa chi phí sản xuất, nâng cao năng suất thiết bị.
+    *   Hỗ trợ đắc lực cho các sáng kiến chuyển đổi số tổng thể của tập đoàn.
+    *   Xây dựng các giải pháp dữ liệu bền vững giúp nhà máy vận hành hiệu quả lâu dài.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### 2. Bộ kỹ năng cốt lõi cần thiết:
+*   **Tư duy phản biện (Critical Thinking)**: Khả năng phân tích thông tin một cách khách quan để đưa ra những nhận định sáng suốt.
+*   **Kỹ năng giao tiếp (Communication)**: Truyền đạt ý tưởng và kết quả phân tích dữ liệu phức tạp thành thông điệp rõ ràng, dễ hiểu cho mọi đối tượng.
+*   **Kể chuyện với dữ liệu (Data Storytelling)**: Biến những con số khô khan thành những câu chuyện có ý nghĩa thực tế để thúc đẩy hành động kinh doanh.
+*   **Giải quyết vấn đề (Problem Solving)**: Xác định đúng các thách thức và tìm kiếm những phương án tối ưu nhất dựa trên nền tảng dữ liệu thực tế.
 
-### Nội Dung Nổi Bật
+#### 3. Tư duy phát triển nghề nghiệp (Mô hình 3 giai đoạn):
+Diễn giả chia sẻ về mô hình phát triển năng lực cá nhân để định hướng lộ trình thăng tiến sự nghiệp:
+*   **Giai đoạn 1: Follower (Người thực thi)**: Giai đoạn bắt đầu (Thực tập sinh/Junior mới). Nhận hướng dẫn chi tiết từng bước từ các anh chị đi trước, tập trung làm quen với môi trường và tích lũy kỹ năng nền tảng cơ bản.
+*   **Giai đoạn 2: Learner (Người học chủ động)**: Đã hiểu các phương án giải quyết bài toán nhưng vẫn cần định hướng của mentor. Đòi hỏi khả năng học nhanh, liên tục đặt các câu hỏi có chiều sâu để tích lũy thực chiến.
+*   **Giai đoạn 3: Problem Solver (Người giải quyết vấn đề)**: Cột mốc trưởng thành quan trọng. Không chỉ làm việc theo checklist yêu cầu nữa mà chủ động phân tích sâu các bài toán kinh doanh khó, đề xuất giải pháp tối ưu và cam kết chất lượng đầu ra.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### 4. Văn hóa làm việc tại các MNC:
+Tổng quan về cách thức giao tiếp, sự tuân thủ quy chuẩn, làm việc nhóm và môi trường đa văn hóa đặc trưng tại các tập đoàn toàn cầu lớn.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+### Chủ đề 2: "DevOps Landscape & Role: Kỹ sư DevOps thực sự làm gì?"
+Trình bày bởi diễn giả **Trong H. Truong** (DevOps Engineer @ Endava Vietnam), chuyên đề làm sáng tỏ các nhiệm vụ thực tế của một kỹ sư DevOps, các yếu tố bối cảnh quyết định phạm vi công việc và bức tranh toàn cảnh về hệ sinh thái công cụ phát triển phần mềm.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 1. Khoảng cách giữa Góc nhìn và Thực tế:
+Diễn giả chỉ ra những hiểu lầm phổ biến về vai trò của DevOps:
+*   *Góc nhìn thông thường*: Chỉ đơn thuần là viết pipeline CI/CD, cài đặt Docker/Kubernetes, triển khai mã nguồn hoặc là "người đi sửa lỗi hệ thống vào lúc nửa đêm".
+*   *Thực tế*: DevOps là một phương pháp luận chiến lược giúp tăng tốc độ phân phối phần mềm, nâng cao độ tin cậy của hệ thống và tăng cường sự cộng tác chặt chẽ giữa nhóm Phát triển (Dev) và Vận hành (Ops).
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### 2. Phạm vi công việc phụ thuộc vào bối cảnh:
+Nhiệm vụ hàng ngày của kỹ sư DevOps không cố định mà phụ thuộc lớn vào:
+*   Quy mô công ty, kích thước dự án, cấu trúc nhóm và độ phức tạp của sản phẩm.
+*   Mức độ trưởng thành của hạ tầng đám mây và mức độ tự động hóa hiện có.
+*   Cơ chế phân quyền hỗ trợ vận hành và cấu trúc của các nhóm Platform/SRE/Security.
 
-#### Domain-Driven Design (DDD)
+#### 3. Toàn cảnh hệ sinh thái công cụ DevOps:
+Hội thảo đã bản đồ hóa các công cụ thiết yếu trải dài qua 10 giai đoạn trong vòng đời DevOps:
+*   **Plan & Code**: Công cụ quản lý cộng tác và kiểm soát mã nguồn (Jira, Git, GitHub, GitLab).
+*   **Build & Test**: Hệ thống tích hợp liên tục (Jenkins, GitLab CI, GitHub Actions) và quản lý gói (npm, NuGet, Docker Hub).
+*   **Release & Deploy**: Triển khai hạ tầng dưới dạng mã (AWS CDK, Terraform, Pulumi) và quản lý cấu hình (Ansible, Chef).
+*   **Operate & Monitor**: Điều phối container (Docker, Kubernetes), nền tảng cloud (AWS, Azure, GCP) và giải pháp giám sát (Datadog, Prometheus, logging/tracing).
+*   **Security (DevSecOps) & Platform Engineering**: Tích hợp các bộ quét lỗ hổng bảo mật (SonarQube, Wiz), quản lý mã khóa (Vault) và các cổng dịch vụ nội bộ tối ưu trải nghiệm nhà phát triển.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
 
-#### Event-Driven Architecture
+### Chủ đề 3: "From First Cloud AI Journey to AWS Partner"
+Trình bày bởi diễn giả **Danh Hoang Hieu Nghi** (AI Engineer, AWS Community Builder, và AWS Student Builder Group Leader), chuyên đề chia sẻ chi tiết lộ trình phát triển bản thân từ một sinh viên tò mò đến kỹ sư đám mây chuyên nghiệp và thủ lĩnh cộng đồng AWS.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### 1. Vòng lặp phát triển sự nghiệp 8 bước:
+Diễn giả phác thảo chặng đường trưởng thành của một người làm cloud:
+1.  **Student Curiosity**: Bắt đầu bằng sự tò mò và đặt các câu hỏi công nghệ nền tảng.
+2.  **First Cloud Journey**: Tìm kiếm môi trường sandbox học tập phù hợp (như các chương trình Bootcamp).
+3.  **Workshop & Community**: Học hỏi tích cực từ bạn bè và tham gia các buổi workshop.
+4.  **Hands-on Labs**: Thực hành liên tục trực tiếp trên môi trường đám mây.
+5.  **School Projects**: Ứng dụng các kiến thức đã học vào giải quyết các bài toán thực tế ở trường học/dự án cá nhân.
+6.  **Portfolio**: Thiết kế một hồ sơ năng lực sạch sẽ, minh bạch mã nguồn để chứng minh năng lực thực tế.
+7.  **AWS Partner**: Gia nhập các đối tác của AWS và giải quyết các bài toán phức tạp cho doanh nghiệp.
+8.  **Share Back**: Quay trở lại chia sẻ kiến thức và hỗ trợ các thế hệ builder tiếp theo.
 
-#### Compute Evolution
+#### 2. Nhận việc chỉ là sự khởi đầu:
+Việc bắt đầu làm việc chỉ là bước đầu của hành trình chuyên môn hóa. Kỹ sư đám mây có thể lựa chọn phát triển sâu theo nhiều nhánh: Solutions Architect, Head of Solutions Architect, DevOps Engineer, Platform Engineer, hoặc Software Engineer.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### 3. Cộng đồng AWS Student Builder & Quyền lợi:
+Chuyên đề làm nổi bật các giá trị và phần thưởng cho sinh viên hoạt động tích cực trong cộng đồng:
+*   **Leader & Core Team Badges**: Nhận các chứng chỉ bản quyền học tập và các quyền lợi đặc biệt.
+*   **AWS Credits**: Tích lũy tài khoản AWS (từ $25 đến $500 qua các sự kiện) để có ngân sách thử nghiệm và chạy các dự án thực hành cá nhân.
+*   **Vouchers thi chứng chỉ AWS**: Các voucher thi chứng chỉ quốc tế (như Cloud Practitioner, Solutions Architect Associate) được trao tặng để khích lệ các trưởng nhóm và thành viên tích cực, giảm bớt rào cản chi phí.
 
-#### Amazon Q Developer
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+### Chủ đề 4: "A Scalable URL Shortening Service on AWS"
+Trình bày bởi hai diễn giả **Đinh Trung Kiên** và **Nguyễn Minh Thọ**, chuyên đề phân tích kiến trúc thiết kế hệ thống, các lớp triển khai hạ tầng và chiến lược tối ưu hóa để xây dựng một dịch vụ rút gọn URL có độ tải cao trên AWS.
 
-### Những Gì Học Được
+#### 1. Nguyên lý thiết kế hệ thống:
+*   Dịch vụ rút gọn URL nhận một đường dẫn dài (ví dụ link sản phẩm Amazon phức tạp) và ánh xạ nó sang một mã ngắn gọn duy nhất (ví dụ: `https://a.co/d/00Ayvqgl`).
+*   Luồng xử lý cốt lõi: Người dùng truy cập link ngắn -> Server tra cứu mã ngắn trong DB -> Thực hiện redirect HTTP 301/302 dẫn người dùng tới URL đích dài ban đầu.
 
-#### Tư Duy Thiết Kế
+#### 2. Kiến trúc hạ tầng trên AWS:
+Triển khai hệ thống đảm bảo khả năng mở rộng (scalability) và chịu lỗi (fault tolerance):
+*   **Điều hướng & Bảo mật perimeter**: Route 53 điều phối traffic đi qua lớp Amazon CloudFront và AWS WAF để đảm bảo tốc độ phản hồi nhanh và ngăn chặn các truy cập độc hại.
+*   **Lưu trữ giao diện tĩnh**: Giao diện frontend được lưu trữ trực tiếp trên AWS Amplify.
+*   **Lớp xử lý API**: Các logic ứng dụng Spring Boot chạy trên các container của AWS Fargate (ECS) đặt trong VPC trải rộng trên nhiều Availability Zone (AZ), đứng sau bộ Application Load Balancer (ALB).
+*   **Lớp lưu trữ & Cache**: Amazon DynamoDB làm cơ sở dữ liệu lưu trữ chính cho các cặp URL mapping. Amazon ElastiCache cho Redis được triển khai tại Database subnets trên 2 AZ nhằm cache các bản ghi truy xuất và tăng tốc độ đọc.
+*   **Hỗ trợ an toàn thông tin**: AWS Secrets Manager lưu trữ khóa bảo mật DB, KMS mã hóa dữ liệu, ACM cung cấp chứng chỉ HTTPS, và IAM phân quyền tối thiểu.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### 3. Mô hình dịch vụ sinh mã khóa trước (Key Generation Service - KGS):
+Để giải quyết bài toán nghẽn ghi (write bottleneck) và xung đột mã băm khi có hàng triệu yêu cầu cùng lúc, nhóm đã áp dụng mô hình **Key Generation Service (KGS)**:
+*   KGS chạy như một tiến trình ngầm (background worker) trên Amazon ECS để chủ động sinh ra các chuỗi ký tự ngắn độc bản trước.
+*   Các mã ngắn này sau đó được đẩy hàng loạt vào hàng đợi của Redis trong Amazon ElastiCache (`LPUSH key_queue`).
+*   Khi có yêu cầu rút gọn link mới, server API chỉ cần lấy ngay một mã có sẵn trong Redis ra (`RPOP`), hoàn toàn loại bỏ độ trễ tính toán hash tại thời điểm chạy và tránh khóa DB để tìm khóa trống.
 
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+### Bài học rút ra
+*   **Ứng dụng kỹ thuật gắn liền với Domain**: Nhận thức rõ rằng kỹ năng lập trình hay phân tích dữ liệu chỉ có giá trị khi gắn chặt với domain cụ thể của doanh nghiệp.
+*   **Chuyển đổi sang tư duy Problem Solver**: Bản thân được truyền cảm hứng để chủ động chuyển đổi từ tư duy "chờ giao việc theo checklist" (Follower) sang tư duy "chủ động phát hiện lỗi và đề xuất phương án khắc phục tối ưu" (Problem Solver) khi xây dựng dự án LingoRise.
+*   **Chiến lược tính toán trước (KGS Pattern)**: Ý tưởng thiết kế KGS minh họa trực quan cách tối ưu hóa các tác vụ ghi nặng bằng cách tính toán trước và lưu vào bộ nhớ đệm (in-memory queue). Đây là tư duy thiết kế hệ thống phân tán rất hữu ích mà tôi sẽ áp dụng khi xử lý các background task có độ tải lớn.
+*   **Bộ nhớ đệm phân tán (Distributed Caching)**: Nhìn nhận rõ vai trò phối hợp giữa DynamoDB (bền vững) và Redis (cache tốc độ cao) giúp tăng trải nghiệm người dùng tối đa cho các hệ thống có tỷ lệ đọc cao.
+*   **Sức mạnh của Portfolio cá nhân**: Ý thức được tầm quan trọng sống còn của việc ghi tài liệu cho portfolio dự án, từ đó thôi thúc tôi ghi chép chi tiết, rõ ràng từng tuần thực tập đối với dự án LingoRise.
+*   **Đóng góp cộng đồng và học hỏi liên tục**: Hiểu rõ các nguồn lực hỗ trợ từ cộng đồng AWS Builder để chuẩn bị thi chứng chỉ AWS Associate tiếp theo của bản thân.
+*   **Bản đồ hóa công cụ DevOps:** Nắm bắt cấu trúc rõ ràng về việc hạ tầng dưới dạng mã (IaC) đóng vai trò then chốt thế nào trong pha triển khai (deploy) của vòng đời phát hành phần mềm.
+*   **Tầm quan trọng của tự động hóa:** Hiểu sâu sắc cách tự động hóa pipeline phát hành sản phẩm ảnh hưởng trực tiếp tới tốc độ chuyển giao, củng cố lý do tại sao chúng tôi lựa chọn AWS SAM để tự động hóa toàn bộ việc cấu hình tài nguyên cho LingoRise.
+*   **Kể chuyện bằng dữ liệu**: Nhận ra rằng việc hoàn thiện code backend hay thiết kế DB chỉ là một nửa chặng đường; khả năng thuyết trình mạch lạc, làm nổi bật giá trị kỹ thuật cho các stakeholder cũng quan trọng không kém.

@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
+title: "Tuần 8 Worklog"
+date: 2026-06-08
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 8 WORKLOG
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện giao diện luồng thi cho học viên: xây dựng trang hiển thị kết quả với biểu đồ điểm số và màn hình xem lại đáp án chi tiết.
+* Chuyển đổi toàn bộ giao diện thi và học sang thiết kế responsive ưu tiên mobile để đảm bảo tương thích đa thiết bị.
+* Khắc phục lỗi quản lý phiên Cognito: token hết hạn giữa bài thi gây mất dữ liệu, triển khai middleware tự động làm mới token.
+* Tích hợp module AI chấm bài Writing vào luồng nộp bài thi.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 2 | - Thiết kế và xây dựng trang tổng kết kết quả thi với bảng điểm phân loại theo từng kỹ năng (Listening/Reading/Writing/Speaking) <br> - Tích hợp component biểu đồ radar Chart.js để trực quan hóa phân bố band score | 08/06/2026 | 08/06/2026 | <https://www.chartjs.org/docs/> |
+| 4 | - Sửa lỗi hết hạn token Cognito: học viên bị mất tiến trình bài thi khi access token hết hạn giữa phiên <br> - Triển khai interceptor tự động làm mới token trong Axios HTTP client để gia hạn token trước khi các lệnh gọi API bị lỗi | 10/06/2026 | 10/06/2026 | <https://docs.aws.amazon.com/cognito/> |
+| 6 | - Kết nối module AI chấm bài Writing: gửi bài luận của học viên đến endpoint phân tích AI và hiển thị phản hồi có cấu trúc (task achievement, coherence, lexical resource, grammar) <br> - Kiểm thử end-to-end toàn bộ vòng đời bài thi trên cả trình duyệt desktop và mobile | 12/06/2026 | 12/06/2026 | <https://nextjs.org/docs/> |
 
-### Kết quả đạt được tuần 8:
+### Tuần 8 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Trực quan hóa kết quả thi**: Xây dựng trang tổng kết kết quả với biểu đồ radar hiển thị phân bố band score theo từng kỹ năng IELTS.
+* **Màn hình xem lại đáp án**: Triển khai giao diện xem lại từng câu hỏi với chỉ thị màu sắc đúng/sai và giải thích từ AI.
+* **Sửa lỗi token Cognito**: Khắc phục lỗi nghiêm trọng khiến học viên mất tiến trình thi do token hết hạn, bằng cách triển khai Axios interceptor tự động làm mới token.
+* **Giao diện responsive mobile-first**: Chuyển đổi toàn bộ trang dành cho học viên sang bố cục responsive, sửa lỗi điều hướng cảm ứng trên thanh câu hỏi.
+* **Tích hợp AI chấm bài Writing**: Kết nối module phân tích bài viết AI, cung cấp phản hồi có cấu trúc theo tiêu chí IELTS cho bài luận.

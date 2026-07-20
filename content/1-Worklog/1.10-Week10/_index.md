@@ -1,57 +1,34 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-06-22
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# WEEK 10 WORKLOG
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Fix production bugs discovered during Week 9 smoke testing: edge cases in exam scoring, file upload errors, and UI rendering inconsistencies.
+* Harden platform security: implement input validation on all API endpoints, add rate limiting middleware, and enforce parameterized SQL queries.
+* Optimize performance: reduce Lambda cold start times, compress S3 media assets, and tune database query execution plans.
+* Run final code cleanup and ensure all build/lint/test commands pass cleanly.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks carried out this week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Tue | - Implement Joi input validation schemas on all API Gateway endpoints <br> - Add express-rate-limit middleware to prevent brute-force attacks on auth endpoints <br> - Audit all SQL queries to confirm parameterized execution | 23/06/2026 | 23/06/2026 | <https://express-validator.github.io/docs/> |
+| Wed | - Optimize Lambda cold starts: reduce package bundle size by tree-shaking unused dependencies <br> - Configure Lambda provisioned concurrency for the exam submission handler to ensure consistent response times | 24/06/2026 | 24/06/2026 | <https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html> |
+| Fri | - Final code cleanup: remove console.log statements, unused imports, and dead code branches <br> - Run full verification suite: `npm run build`, `npm run typecheck`, `npm run lint`, `npm test` — all passing green | 26/06/2026 | 26/06/2026 | <https://eslint.org/docs/> |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Scoring Bug Fix**: Corrected partial scoring logic for multiple-answer Reading questions that was undercounting correct responses.
+* **Upload Error Handling**: Added proper error boundaries and user notifications for oversized file uploads exceeding the 5MB S3 limit.
+* **Security Hardening**: Implemented input validation, rate limiting, and confirmed parameterized queries across all API endpoints.
+* **Cold Start Optimization**: Reduced Lambda cold start times by ~40% through dependency tree-shaking and provisioned concurrency on critical handlers.
+* **Asset Optimization**: Compressed all exam images via Sharp, reducing average image size by 60% and improving page load times.
+* **Database Performance**: Added strategic indexes, reducing average query times for exam session lookups from ~200ms to ~15ms.
+* **Clean Codebase**: All build, lint, typecheck, and test commands passing green with zero warnings.

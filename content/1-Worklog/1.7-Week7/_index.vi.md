@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+title: "Tuần 7 Worklog"
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 7 WORKLOG
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Giải quyết triệt để lỗi thời gian phản hồi của AI khi tạo đề thi lúc nhanh lúc chậm gây nguy cơ timeout hệ thống.
+* Triển khai kiến trúc xử lý bất đồng bộ (async queue) cho các tiến trình gọi API của AI.
+* Cải tiến giao diện trang chủ Admin Dashboard để hiển thị các đề thi mới tạo và tối ưu hóa logic phê duyệt/kiểm duyệt đề ngay sau khi tạo xong.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 3 | - Tách biệt tiến trình: chuyển luồng tạo đề thi của AI thành background job chạy bất đồng bộ qua hàng đợi (BullMQ) <br> - Trả về kết quả lập tức cho client kèm theo job ID để theo dõi tiến độ | 02/06/2026 | 02/06/2026 | <https://nodejs.org/api/> |
+| 4 | - Tối ưu hóa prompt context và cấu hình caching cho các dữ liệu tĩnh <br> - Đo đạc và kiểm tra độ ổn định của tốc độ tạo đề thi sau khi áp dụng hàng đợi ngầm | 03/06/2026 | 03/06/2026 | <https://redis.io/documentation> |
+| 5 | - Tái cấu trúc giao diện trang chủ Admin Dashboard (`/admin/dashboard`), bổ sung bảng danh sách các đề thi mới tạo cần kiểm duyệt (pending review) | 04/06/2026 | 04/06/2026 | <https://nextjs.org/docs/> |
+| 6 | - Xây dựng logic kiểm duyệt nhanh tại trang chủ: thiết kế các nút Duyệt (Approve) và Từ chối (Reject) thao tác trực tiếp thay vì chuyển trang <br> - Chạy thử nghiệm và xác minh trạng thái chuyển đổi trong DB | 05/06/2026 | 05/06/2026 | <https://playwright.dev/> |
 
-### Kết quả đạt được tuần 7:
+### Tuần 7 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Ổn định tốc độ tạo đề bằng AI**: Khắc phục hoàn toàn lỗi xử lý chậm và nghẽn mạng nhờ triển khai hàng đợi xử lý ngầm và tối ưu hóa kích thước prompt.
+* **Rút gọn quy trình kiểm duyệt**: Tích hợp danh sách đề thi chờ duyệt trực tiếp lên trang chủ Dashboard giúp quản trị viên nắm bắt tức thời.
+* **Logic phê duyệt một chạm**: Thiết lập các nút phê duyệt nhanh tại trang chủ, cập nhật tức thì trạng thái đề thi trong cơ sở dữ liệu PostgreSQL.
+* **Nâng cao tính chịu tải**: Luồng tạo đề được phân tách giúp server backend hoạt động mượt mà, không bị treo khi nhiều yêu cầu tạo đề diễn ra cùng lúc.
+* **Bảo mật và Nguyên tử dữ liệu**: Đảm bảo luồng kiểm duyệt nhanh thực hiện thông qua các API endpoints được bảo mật và bọc trong transaction để tránh lỗi đồng bộ dữ liệu.

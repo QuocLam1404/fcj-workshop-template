@@ -1,59 +1,31 @@
 ---
-title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+title: "Tuần 4 Worklog"
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 4 WORKLOG
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết kế và xây dựng giao diện trang Dashboard dành cho quản trị viên (Admin) của nền tảng LingoRise, tập trung vào vận hành nội dung và ghi nhận lịch sử hoạt động.
+* Thiết lập hệ thống phân quyền (RBAC) chặt chẽ ở backend để bảo vệ các tuyến API nhạy cảm.
+* Xây dựng luồng phê duyệt và kiểm tra câu hỏi học tập (`/admin/content-operations`) tích hợp chẩn đoán từ trí tuệ nhân tạo (AI).
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 3 | - Phát triển middleware phân quyền dựa trên vai trò (RBAC - Role-Based Access Control) ở phía Express backend <br> - Chặn và kiểm tra quyền admin dựa trên JWT tokens trước khi cho phép thay đổi dữ liệu | 12/05/2026 | 12/05/2026 | <https://expressjs.com/> |
+| 4 | - Định nghĩa database schema cho lịch sử hoạt động (Audit Logs) trong hệ cơ sở dữ liệu PostgreSQL <br> - Viết các hàm tự động ghi nhận hoạt động admin (ví dụ: log `admin.question_bank_quality_flagged`) | 13/05/2026 | 13/05/2026 | <https://www.postgresql.org/docs/> |
+| 6 | - Kiểm thử tích hợp toàn trình các tính năng thay đổi dữ liệu của admin <br> - Viết các ca kiểm thử bảo mật thử nghiệm truy cập trái phép vào tài khoản admin | 15/05/2026 | 15/05/2026 | <https://playwright.dev/> |
 
-### Kết quả đạt được tuần 4:
+### Tuần 4 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Xây dựng giao diện quản trị**: Thiết kế thành công trang Dashboard cao cấp bằng Next.js hỗ trợ quản lý ngân hàng câu hỏi và bài đọc với lượng dữ liệu lớn.
+* **Bảo mật phân quyền vững chắc**: Triển khai thành công middleware kiểm tra vai trò người dùng ở backend (RBAC), chặn đứng truy cập trái phép.
+* **Hệ thống Audit Logs minh bạch**: Lưu trữ toàn bộ lịch sử thao tác dữ liệu nhạy cảm của Admin vào bảng cơ sở dữ liệu PostgreSQL một cách chính xác.
+* **Tương tác trực quan cùng AI**: Hoàn thành luồng kiểm duyệt kết nối các cờ báo chất lượng câu hỏi từ AI lên màn hình quản lý của Admin.
+* **Đạt chuẩn kiểm thử bảo mật**: Hoàn thiện bộ kiểm thử tự động, xác nhận độ an toàn tuyệt đối trước các truy cập leo thang đặc quyền.

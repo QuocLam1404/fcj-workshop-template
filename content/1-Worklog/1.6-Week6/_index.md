@@ -1,57 +1,35 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# WEEK 6 WORKLOG
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Troubleshoot and resolve rendering issues where online-scraped IELTS Reading questions lacked diagrams or charts.
+* Fix gap-fill rendering bugs to ensure input text boxes display correctly for student answers.
+* Design robust case-insensitive grading algorithms and structured exam generation logic.
+* Develop an automated asset downloader and storage architecture using Amazon S3 to store images.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks carried out this week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Mon | - Audit copied IELTS Academic Reading questions and trace why diagrams failed to load <br> - Investigate gap-fill rendering bug where blank tokens failed to display input text boxes | 25/05/2026 | 25/05/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html> |
+| Tue | - Program a backend downloader service to automatically scrape raw image links inside markdown, fetch the binary files, and re-upload them to a secure Amazon S3 bucket <br> - Write regex-based parsing helper on the frontend to replace custom blank notations with HTML `<input>` elements | 26/05/2026 | 26/05/2026 | <https://nodejs.org/api/> |
+| Thu | - Refactor the exam UI parser on the frontend (`lingorise-app`) to convert internal S3 markdown paths into pre-signed S3 links, enabling secure, credential-less image loading <br> - Implement exam generation service on the backend to organize questions, enforce ordering rules, and cache configurations | 28/05/2026 | 28/05/2026 | <https://react.dev/reference/react> |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Resolved Broken Reading Images**: Successfully resolved missing diagrams/charts in copied online reading tests by establishing a dedicated image hosting flow.
+* **Gap-Fill Input Box Fix**: Restored missing text inputs inside reading passages by implementing a regex parser for gap tokens.
+* **Case-Insensitive Grading**: Implemented string normalization algorithms (lowercasing, trimming whitespace) to evaluate student gap-fill responses accurately.
+* **Exam Generation Logic**: Programmed backend handlers to dynamically assemble exam objects, structuring sections and sorting questions systematically.
+* **S3 Downloader Pipeline**: Coded a Node.js scraper tool that pulls external assets and hosts them inside LingoRise S3 storage automatically.
+* **Database Content Fix**: Executed database migration scripts replacing all invalid image URLs with S3 pre-signed references.
+* **Secure Frontend Renderers**: Created a customized React markdown wrapper component that renders secure S3 image URLs dynamically.
+* **Optimized Layouts**: Corrected responsive image dimensions to ensure stable exam layouts across desktop and mobile screens, avoiding Cumulative Layout Shift (CLS).

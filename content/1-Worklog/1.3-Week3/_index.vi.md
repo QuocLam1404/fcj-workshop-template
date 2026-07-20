@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+title: "Tuần 3 Worklog"
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# TUẦN 3 WORKLOG
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm chủ kiến trúc Serverless (AWS Lambda & API Gateway) thông qua phương pháp lập trình cặp cùng Trợ lý AI (AI Pair-programming).
+* Nghiên cứu tích hợp các dịch vụ AI của AWS (Textract, Comprehend) và thiết kế Prompt Engineering.
+* Ứng dụng Trợ lý AI vào quy trình làm việc hàng ngày để sinh mã, sửa lỗi cấu hình và tối ưu hóa hệ thống.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ sẽ được thực hiện trong tuần này:
 
+| Ngày | Nhiệm vụ | Bắt đầu ngày | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------- | ------------- | --------------- | ------------------- |
+| 2 | - Tham vấn Trợ lý AI để phác thảo sơ đồ kiến trúc Serverless <br> - Phân tích ưu nhược điểm của các loại Trigger và cấu trúc mã nguồn Lambda | 04/05/2026 | 04/05/2026 | <https://docs.aws.amazon.com/lambda/> |
+| 3 | - Sử dụng Trợ lý AI để sinh mã nguồn Node.js cho các Lambda function <br> - Cấu hình API Gateway và viết các template ánh xạ request/response | 05/05/2026 | 05/05/2026 | <https://docs.aws.amazon.com/apigateway/> |
+| 4 | - Thiết lập Prompt Engineering cùng Trợ lý AI để định hình JSON schema cho kết quả xử lý <br> - Nghiên cứu tài liệu API của Textract để phục vụ trích xuất văn bản | 06/05/2026 | 06/05/2026 | <https://docs.aws.amazon.com/textract/> |
+| 6 | - Kiểm thử tích hợp toàn trình luồng S3 -> Lambda -> Textract <br> - Cùng AI phân tích CloudWatch Logs để phát hiện chai sạn hiệu năng và viết tài liệu tổng kết tuần | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-### Kết quả đạt được tuần 3:
+### Tuần 3 Thành tựu:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Tối ưu tốc độ phát triển**: Đẩy nhanh tốc độ viết mã nguồn backend nhờ sự hỗ trợ sinh và gỡ lỗi code trực tiếp từ Trợ lý AI.
+* **Xây dựng API Serverless**: Hoàn thành hệ thống RESTful API kết hợp Lambda và API Gateway bảo mật.
+* **Nền tảng Prompt Engineering**: Xây dựng thành công các kịch bản Prompt chuẩn hóa để chuyển dữ liệu thô từ Textract sang JSON có cấu trúc.
+* **Vận hành Event-Driven**: Triển khai thành công luồng xử lý tự động kích hoạt bởi event tải file lên S3.
+* **Cải thiện chất lượng code**: Tận dụng AI để thực hiện đánh giá code (code review) cục bộ, đảm bảo tính bảo mật và sạch sẽ của mã nguồn.
