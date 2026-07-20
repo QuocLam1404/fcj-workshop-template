@@ -8,7 +8,7 @@ pre: " <b> 4. </b> "
 
 # Các sự kiện đã tham gia trong thời gian thực tập
 
-Dưới đây là các sự kiện tôi đã tham gia trong thời gian thực tập tại **Bootcamp First Cloud AI Journey**:
+Dưới đây là các sự kiện em đã tham gia trong thời gian thực tập tại **Bootcamp First Cloud AI Journey**:
 
 **Sự kiện 1:** [AWS First Cloud AI Journey — Community Day](4.1-Event1/)
 

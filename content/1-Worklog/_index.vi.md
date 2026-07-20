@@ -8,7 +8,7 @@ pre: " <b> 1. </b> "
 
 # Nhật ký thực tập
 
-Nhật ký này ghi lại 10 tuần thực tập tại chương trình **Bootcamp First Cloud AI Journey**, từ **17/04/2026 đến 26/06/2026**. Trong khoảng thời gian này, tôi đã tiến bộ từ việc học các dịch vụ AWS cơ bản đến xây dựng và triển khai một nền tảng luyện thi IELTS/TOEIC hoàn chỉnh (**LingoRise**) sử dụng kiến trúc serverless trên AWS.
+Nhật ký này ghi lại 10 tuần thực tập tại chương trình **Bootcamp First Cloud AI Journey**, từ **17/04/2026 đến 26/06/2026**. Trong khoảng thời gian này, em đã tiến bộ từ việc học các dịch vụ AWS cơ bản đến xây dựng và triển khai một nền tảng luyện thi IELTS/TOEIC hoàn chỉnh (**LingoRise**) sử dụng kiến trúc serverless trên AWS.
 
 **Tuần 1:** [Nền tảng AWS — EC2, VPC, DRS & SAM](1.1-week1/)
 

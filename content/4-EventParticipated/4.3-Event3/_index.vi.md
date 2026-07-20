@@ -39,10 +39,12 @@ Cuộc thi được tổ chức dưới dạng trả lời câu hỏi trắc ngh
 
 ### Nội dung nổi bật
 - **Các câu hỏi tình huống thực tế**: Đề thi tập trung sâu vào giải quyết các bài toán thiết kế hệ thống thực tế thay vì kiểm tra lý thuyết đơn thuần, bám sát cấu trúc của các kỳ thi chứng chỉ quốc tế từ AWS.
-- **Đo lường năng lực cá nhân**: Thử thách là cơ hội tuyệt vời giúp tôi tự đánh giá kiến thức của bản thân, xác định các điểm còn thiếu sót trong mảng cấu hình mạng nâng cao, thiết lập Privilege Boundary trong IAM và các cơ chế cache cơ sở dữ liệu.
+- **Đo lường năng lực cá nhân**: Thử thách là cơ hội tuyệt vời giúp em tự đánh giá kiến thức của bản thân, xác định các điểm còn thiếu sót trong mảng cấu hình mạng nâng cao, thiết lập Privilege Boundary trong IAM và các cơ chế cache cơ sở dữ liệu.
+- **Tư duy thiết kế hạ tầng chịu lỗi (Fault-Tolerant)**: Học hỏi các best practices xử lý failover đa vùng (Multi-AZ) và cơ chế tự động mở rộng (Auto Scaling) cho ứng dụng quy mô lớn.
+- **Tích lũy mẹo thi chứng chỉ AWS**: Nắm vững phương pháp loại trừ đáp án nhiễu, cách đọc từ khóa trong đề bài để định hình kiến trúc đáp án đúng.
 - **Thảo luận đáp án cùng Mentor**: Ngay sau phần thi, các mentor giàu kinh nghiệm từ AWS Study Group đã tổ chức buổi chữa đề chi tiết, phân tích cặn kẽ lý do đằng sau các đáp án đúng và chỉ ra những lỗi sai phổ biến mà kỹ sư thường gặp phải khi thiết kế kiến trúc.
 
 ### Bài học rút ra
-- **Mức độ sẵn sàng cho Chứng chỉ**: Giúp tôi đánh giá chính xác năng lực hiện tại, từ đó lập lộ trình ôn luyện rõ ràng để chuẩn bị cho kỳ thi Solutions Architect Associate (SAA) sắp tới.
+- **Mức độ sẵn sàng cho Chứng chỉ**: Giúp em đánh giá chính xác năng lực hiện tại, từ đó lập lộ trình ôn luyện rõ ràng để chuẩn bị cho kỳ thi Solutions Architect Associate (SAA) sắp tới.
 - **Tư duy phân tích tình huống phức tạp**: Nâng cao kỹ năng phân tích các câu hỏi tình huống nhiều biến số, đặc biệt là cách xác định phương án "tối ưu nhất về chi phí" hoặc "vận hành hiệu quả nhất" giữa nhiều giải pháp kỹ thuật khả thi.
 - **Củng cố kiến thức kiến trúc đám mây**: Hiểu sâu hơn về mô hình Landing Zone đa tài khoản, kết nối bảo mật nội bộ VPC và cấu hình Auto-scaling Group — các kiến thức nền tảng vô cùng quan trọng khi thiết kế các hệ thống doanh nghiệp an toàn và tin cậy.

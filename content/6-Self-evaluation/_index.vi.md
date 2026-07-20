@@ -5,9 +5,9 @@ weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-Khi mới bước chân vào kỳ thực tập tại **Bootcamp First Cloud AI Journey** từ **17/04/2026** đến **26/06/2026**, tôi xuất phát điểm là một người hoàn toàn mới (newbie) đối với thế giới điện toán đám mây. Những khái niệm như VPC, IAM Policies, Route 53 hay Infrastructure as Code (IaC) đều vô cùng xa lạ. 
+Khi mới bước chân vào kỳ thực tập tại **Bootcamp First Cloud AI Journey** từ **17/04/2026** đến **26/06/2026**, em xuất phát điểm là một người hoàn toàn mới (newbie) đối với thế giới điện toán đám mây. Những khái niệm như VPC, IAM Policies, Route 53 hay Infrastructure as Code (IaC) đều vô cùng xa lạ. 
 
-Nhờ việc tham gia xây dựng và triển khai **LingoRise — một nền tảng luyện thi IELTS/TOEIC serverless trên AWS**, tôi đã được va chạm thực tế, hiểu rõ cách các dịch vụ cloud kết nối với nhau và dần định hình tư duy của một **Cloud Engineer thực thụ**.
+Nhờ việc tham gia xây dựng và triển khai **LingoRise — một nền tảng luyện thi IELTS/TOEIC serverless trên AWS**, em đã được va chạm thực tế, hiểu rõ cách các dịch vụ cloud kết nối với nhau và dần định hình tư duy của một **Cloud Engineer thực thụ**.
 
 ---
 

@@ -9,10 +9,10 @@ pre: " <b> 7. </b> "
 
 ## Phản hồi về chương trình thực tập FCAJ
 
-### Những điều tôi thích (Dưới góc nhìn một người mới)
-1. **Lộ trình học từ cơ bản đến nâng cao:** Giai đoạn nền tảng AWS 4 tuần đầu là bước chuẩn bị vô giá cho một newbie như tôi. Việc đi từ các dịch vụ đơn lẻ (EC2, S3, Lambda) đến cách phối hợp chúng giúp tôi không bị ngợp trước hệ sinh thái khổng lồ của AWS.
-2. **Học thông qua dự án thực tế:** Triển khai **LingoRise** trên hạ tầng đám mây thực tế giúp tôi thấu hiểu những bài toán thực chiến mà một Cloud Engineer phải giải quyết như: bảo mật dữ liệu, phân quyền truy cập, thiết lập CDN và tối ưu hóa cơ sở dữ liệu.
-3. **Môi trường rèn luyện tiếng Anh chuyên nghiệp:** Yêu cầu viết mọi tài liệu bằng tiếng Anh ban đầu là một thử thách lớn, nhưng đã giúp tôi làm quen với ngôn ngữ kỹ thuật quốc tế và tự tin hơn rất nhiều khi đọc tài liệu gốc của AWS.
+### Những điều em thích (Dưới góc nhìn một người mới)
+1. **Lộ trình học từ cơ bản đến nâng cao:** Giai đoạn nền tảng AWS 4 tuần đầu là bước chuẩn bị vô giá cho một newbie như em. Việc đi từ các dịch vụ đơn lẻ (EC2, S3, Lambda) đến cách phối hợp chúng giúp em không bị ngợp trước hệ sinh thái khổng lồ của AWS.
+2. **Học thông qua dự án thực tế:** Triển khai **LingoRise** trên hạ tầng đám mây thực tế giúp em thấu hiểu những bài toán thực chiến mà một Cloud Engineer phải giải quyết như: bảo mật dữ liệu, phân quyền truy cập, thiết lập CDN và tối ưu hóa cơ sở dữ liệu.
+3. **Môi trường rèn luyện tiếng Anh chuyên nghiệp:** Yêu cầu viết mọi tài liệu bằng tiếng Anh ban đầu là một thử thách lớn, nhưng đã giúp em làm quen với ngôn ngữ kỹ thuật quốc tế và tự tin hơn rất nhiều khi đọc tài liệu gốc của AWS.
 4. **Sự hỗ trợ nhiệt tình từ Mentor:** Mentor luôn kiên nhẫn định hướng kiến trúc đám mây và chỉ dẫn các phương pháp deploy an toàn cho một người mới vào ngành.
 
 ### Đề xuất cải thiện
