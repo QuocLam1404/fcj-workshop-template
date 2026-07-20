@@ -22,7 +22,7 @@ Vì kiến trúc là serverless, bạn nhận được những lợi ích thực
 - **Không phải quản lý server** — không vá lỗi, không hoạch định dung lượng cho tầng tính toán; AWS vận hành runtime cho bạn.
 - **Co giãn về không và mở rộng linh hoạt** — Lambda thu về không khi rảnh và tự động mở rộng khi có tải.
 
-![Kiến trúc serverless của LingoRise trên AWS](/images/lingorise_architecture.png)
+![Sơ đồ kiến trúc serverless của LingoRise trên AWS](/images/so_do_kien_truc.png)
 
 #### Kiến trúc
 

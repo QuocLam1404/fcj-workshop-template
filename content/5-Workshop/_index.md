@@ -22,7 +22,7 @@ Because the architecture is serverless, you gain real benefits over a traditiona
 - **No servers to manage** — no patching, no capacity planning for the compute layer; AWS operates the runtime.
 - **Scales to zero and beyond** — Lambda scales down to nothing when idle and scales out automatically under load.
 
-![LingoRise serverless architecture on AWS](/images/lingorise_architecture.png)
+![LingoRise serverless architecture on AWS](/images/so_do_kien_truc.png)
 
 #### Architecture
 

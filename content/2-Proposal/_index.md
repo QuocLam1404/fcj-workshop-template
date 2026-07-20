@@ -41,7 +41,7 @@ That's why I came up with the idea for **LingoRise**—a Vietnamese-first IELTS 
 
 LingoRise uses a decoupled architecture where the frontend and backend communicate via REST APIs, with AWS services handling authentication, file storage, and content delivery.
 
-![LingoRise Technical Architecture](/images/2-Proposal/lingorise_architecture.png)
+![LingoRise Technical Architecture](/images/so_do_kien_truc.png)
 
 #### Technology Stack
 | Layer | Technology | Rationale |

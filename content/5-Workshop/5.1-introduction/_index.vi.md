@@ -18,7 +18,7 @@ Chương này là tấm bản đồ. Nó cho thấy mọi dịch vụ AWS trong 
 
 LingoRise chạy theo mô hình serverless. Lưu lượng người dùng đổ vào hai bề mặt: **frontend** (Amplify Hosting, phục vụ ứng dụng Next.js) và **API** (API Gateway, đứng trước mọi backend handler). Lambda là tầng tính toán duy nhất — không có server chạy dài hạn nào phải vá lỗi. Lambda giao tiếp với Supabase PostgreSQL cho dữ liệu quan hệ, S3 cho asset, SSM cho secret, và gọi ra các đối tác bên ngoài để sinh nội dung AI và xử lý thanh toán. CloudWatch thu thập log từ mọi hàm.
 
-![Kiến trúc tổng quan LingoRise](/images/lingorise_architecture.png)
+![Sơ đồ kiến trúc tổng quan LingoRise](/images/so_do_kien_truc.png)
 
 Bảng dưới đây liệt kê mọi dịch vụ AWS trong phạm vi và vai trò của nó trong LingoRise.
 

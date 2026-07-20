@@ -41,7 +41,7 @@ Từ đó em nảy ra ý tưởng làm **LingoRise** — một trang web luyện
 
 LingoRise sử dụng kiến trúc tách biệt (decoupled), frontend và backend giao tiếp qua REST API, với các dịch vụ AWS xử lý xác thực, lưu trữ file, và phân phối nội dung.
 
-![Kiến trúc kỹ thuật LingoRise](/images/2-Proposal/lingorise_architecture.png)
+![Sơ đồ kiến trúc kỹ thuật LingoRise](/images/so_do_kien_truc.png)
 
 #### Công nghệ sử dụng
 | Tầng | Công nghệ | Lý do chọn |
