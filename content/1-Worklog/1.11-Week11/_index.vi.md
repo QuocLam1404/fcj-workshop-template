@@ -1,5 +1,5 @@
 ---
-title: "Tuần 11 Worklog"
+title: "Tài liệu kỹ thuật, Hướng dẫn sử dụng & Đặc tả API"
 date: 2026-06-29
 weight: 11
 chapter: false

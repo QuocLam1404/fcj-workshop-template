@@ -30,6 +30,6 @@ This worklog documents 10 weeks of my internship at the **Bootcamp First Cloud A
 
 **Week 10:** [Handover, Final Report & Presentation](1.10-week10/)
 
-**Week 11:** [Week 11 Worklog](1.11-week11/)
+**Week 11:** [Technical Documentation, User Guides & API Spec](1.11-week11/)
 
-**Week 12:** [Week 12 Worklog](1.12-week12/)
+**Week 12:** [Performance Tuning, Security Audit & Final Release](1.12-week12/)

@@ -30,6 +30,6 @@ Nhật ký này ghi lại 10 tuần thực tập tại chương trình **Bootcam
 
 **Tuần 10:** [Bàn giao, báo cáo tổng kết & thuyết trình](1.10-week10/)
 
-**Tuần 11:** [Tuần 11 Worklog](1.11-week11/)
+**Tuần 11:** [Tài liệu kỹ thuật, Hướng dẫn sử dụng & Đặc tả API](1.11-week11/)
 
-**Tuần 12:** [Tuần 12 Worklog](1.12-week12/)
+**Tuần 12:** [Tối ưu hiệu năng, Kiểm tra bảo mật & Đóng gói sản phẩm](1.12-week12/)

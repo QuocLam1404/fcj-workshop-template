@@ -1,5 +1,5 @@
 ---
-title: "Week 11 Worklog"
+title: "Technical Documentation, User Guides & API Spec"
 date: 2026-06-29
 weight: 11
 chapter: false

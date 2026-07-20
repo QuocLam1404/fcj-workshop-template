@@ -1,5 +1,5 @@
 ---
-title: "Week 12 Worklog"
+title: "Performance Tuning, Security Audit & Final Release"
 date: 2026-07-06
 weight: 12
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Tuần 12 Worklog"
+title: "Tối ưu hiệu năng, Kiểm tra bảo mật & Đóng gói sản phẩm"
 date: 2026-07-06
 weight: 12
 chapter: false
