@@ -12,6 +12,7 @@ This section presents the project proposal for **LingoRise** — the capstone pr
 {{% notice info %}}
 * **Deployed Website:** [lingorise.xyz](https://www.lingorise.xyz/)
 * **Project Demo Video:** [Google Drive Demo Folder](https://drive.google.com/drive/u/0/folders/1p3dhFRWf3rbgyNnlVk-R2KkELfWrA1Ce)
+* **Architecture Diagram (Draw.io):** [sơ đồ kiến trúc đồ án thực tập .drawio](/images/so_do_kien_truc.drawio)
 {{% /notice %}}
 
 ### 1. Background & Motivation

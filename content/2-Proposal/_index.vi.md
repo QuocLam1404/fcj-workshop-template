@@ -12,6 +12,7 @@ Phần này trình bày đề xuất dự án cho **LingoRise** — sản phẩm
 {{% notice info %}}
 * **Trang web đã triển khai:** [lingorise.xyz](https://www.lingorise.xyz/)
 * **Video Demo dự án:** [Thư mục Google Drive Demo](https://drive.google.com/drive/u/0/folders/1p3dhFRWf3rbgyNnlVk-R2KkELfWrA1Ce)
+* **Sơ đồ kiến trúc (Draw.io):** [sơ đồ kiến trúc đồ án thực tập .drawio](/images/so_do_kien_truc.drawio)
 {{% /notice %}}
 
 ### 1. Bối cảnh & Động lực
